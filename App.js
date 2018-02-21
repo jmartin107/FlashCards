@@ -22,7 +22,6 @@ const ConnectedRoot = connect(
 export default class App extends Component {
 
     componentDidMount() {
-        debugger;
         setLocalNotification()
     }
 

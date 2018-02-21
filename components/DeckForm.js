@@ -40,7 +40,10 @@ class DeckForm extends Component {
         }
 
         this.props.saveDeckTitle(this.state.title)
-        this.props.navigation.navigate('DeckList')
+            .then(() => {
+                this.props.navigation.navigate('DeckDetail', {item: {title: this.state.title}})
+            })
+
     }
 
     validate = (inputs) => {

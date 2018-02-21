@@ -43,9 +43,8 @@ class DeckDetail extends Component {
 
         let deck = this.props.decks[title]
 
-
         return (
-            <View style={{display: 'flex', flex: 1}}>
+            deck && <View style={{display: 'flex', flex: 1}}>
                 <View style={{flex: 1}}>
                     <Text style={styles.title}> {deck.title}</Text>
                     <Text style={styles.cards}>{deck.questions.length} cards</Text>
