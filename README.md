@@ -4,6 +4,7 @@
 
 
 ## Usage
+This app was tested on iOS only.
 
 ### Prerequisites
 Expo must be installed
