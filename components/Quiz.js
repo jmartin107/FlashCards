@@ -178,13 +178,8 @@ class Quiz extends Component {
     }
 }
 
-function mapStateToProps(state) {
-    return {
-        decks: state
-    }
-}
 
-export default connect(mapStateToProps)(Quiz)
+export default connect(decks => ({ decks }))(Quiz)
 
 const styles = StyleSheet.create({
     question: {
